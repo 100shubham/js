@@ -20,6 +20,8 @@ try {
     );
 
     if(!profile){
+        console.log('No profile, Create one Please');
+        
         return res.status(400).json({ msg: 'There is no profile for this user '});
     }
 

@@ -38,7 +38,7 @@ const App = () => {
         <Routes>
         <Route exact path='/login' element={<Login/>}></Route>
         <Route exact path='/register' element={<Register/>}></Route>
-        <Route path='/dashboard' element={<PrivateRoute Component={Dashboard}/>}></Route>
+        <Route exact path='/dashboard' element={<PrivateRoute Component={Dashboard}/>}></Route>
         </Routes>
       </section>
       </Fragment>
