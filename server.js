@@ -3,8 +3,8 @@ const connetDB = require('./config/db');
 
 const app=express();
 
-// Connect Database
-connetDB();
+// Connect Database to server
+connetDB() ;
 
 // Init Middleware
 app.use(express.json({ extended: false }));
